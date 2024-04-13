@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  angular-app:
+    image: ikram745/angularr:latest
+    ports:
+      - "4201:80"  # Specify ports as strings
+    restart: always  
