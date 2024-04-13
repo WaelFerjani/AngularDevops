@@ -1,0 +1,11 @@
+<div class="d-flex justify-content-center align-items-center flex-column">
+    <h2>Liste des Foyers</h2>
+    <ul>
+      <li *ngFor="let foyer of foyers; let even = even" [ngStyle]="{'background-color': even ? '#f2f2f2' : '#f9f9f9'}">
+        <span [ngStyle]="{'color': '#007bff'}">ID:</span> {{ foyer.idFoyer }},
+        <span [ngStyle]="{'color': '#28a745'}">Nom:</span> {{ foyer.nomFoyer }},
+        <span [ngStyle]="{'color': '#dc3545'}">Capacité:</span> {{ foyer.capaciteFoyer }}
+      </li>
+    </ul>
+  </div>
+  
