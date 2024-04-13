@@ -1,7 +1,7 @@
 version: '3.8'
 services:
-  angular-upli:
-    image: ikram745/angular-upli:latest
+  angular-aplication:
+    image: ikram745/angular-aplication:latest
     ports:
       - "4201:80"  # Specify ports as strings
     restart: always  
