@@ -7,11 +7,11 @@ import { Bloc } from './bloc.model';
   providedIn: 'root'
 })
 export class BlocService {
-  private baseUrl = 'http://192.168.1.11:8181/api/foyers';
+  private baseUrl = 'http://172.16.6.254:8083/api/blocs';
 
   constructor(private http: HttpClient) { }
 
   getAllBlocs(): Observable<Bloc[]> {
-    return this.http.get<Bloc[]>(`${this.baseUrl}/findAllF`);
+    return this.http.get<Bloc[]>(`${this.baseUrl}/findAll`);
   }
 }
