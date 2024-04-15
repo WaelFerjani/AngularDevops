@@ -1,5 +1,5 @@
 <div class="d-flex justify-content-center align-items-center flex-column">
-    <h2>Liste des Foyers</h2>
+    <h2>Blocs</h2>
     <ul>
       <li *ngFor="let bloc of blocs; let even = even" [ngStyle]="{'background-color': even ? '#f2f2f2' : '#f9f9f9'}">
         <span [ngStyle]="{'color': '#007bff'}">ID:</span> {{ bloc.idBloc }},
